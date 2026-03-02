@@ -1,0 +1,9 @@
+customer_id,name,age,gender,spend,city
+101,Sai,23,M,12000,Bangalore
+102,Anu,29,F,18000,Hyderabad
+103,Rahul,35,M,25000,Delhi
+104,Meena,21,F,8000,Chennai
+105,Nihal,25,M,8000,Hyderabad
+106,Saurabh,29,M,8000,Hyderabad
+107,Neha,21,M,8000,Hyderabad
+108,Priya,33,M,8000,Hyderabad
