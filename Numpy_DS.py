@@ -70,3 +70,26 @@ import numpy as np
 # print(matrix[0,1])
 # print(matrix[1:])
 # print(matrix[:2])
+
+# Random
+
+import numpy as np
+
+# 1. Randomly generate Float Numbers between 0 and 1
+# click_probability = np.random.rand(1000000)
+# click_rate = (click_probability > 0.6)
+# print((click_probability > 0.85).mean())
+
+# print(1000000 * 0.150484)
+
+# 2. Randomly generate int values within a range
+# print(np.random.randint(6))
+
+# 3. Random Matrix
+# print(np.random.rand(3,3))
+
+# 4. Random Choice
+# students = ["Amit", "Priya", "Sowmya", "Neha"]
+# print(np.random.choice(students, 1))
+
+# Vectors
