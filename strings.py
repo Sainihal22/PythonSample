@@ -50,3 +50,4 @@ word = "Nihal"
 # print(f"My name is : {word}")
 
 print("My name is : " + word)
+

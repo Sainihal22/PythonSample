@@ -93,3 +93,106 @@ import numpy as np
 # print(np.random.choice(students, 1))
 
 # Vectors
+
+# v1 = np.array([1,2,3])
+# v2 = np.array([4,5,6])
+
+# Operations
+
+# 1. Addition
+
+# v3 = v1 + v2
+
+# print(v3)
+
+# 2. Substraction
+
+# v3 = v1 - v2
+# print(v3)
+
+# 3. Scaling
+
+# v3 = v1 * v2
+# print(v3)
+
+# Dot Product
+# v1 = np.array([1,2,3])
+# v2 = np.array([4,5,6])
+
+# v3 = np.dot(v1,v2)
+# print(v3)
+
+# Cosine Similarity
+# from numpy.linalg import norm
+
+# cos_sim = np.dot(v1,v2) / (norm(v1) * norm(v2))
+
+
+# import sqlite3
+
+# conn = sqlite3.connect("documents.db")
+# cursor = conn.cursor()
+
+# cursor.execute("""
+# CREATE TABLE IF NOT EXISTS docs (
+#     id INTEGER PRIMARY KEY,
+#     text TEXT,
+#     v1 REAL,
+#     v2 REAL,
+#     v3 REAL
+# )
+# """)
+
+
+# conn = sqlite3.connect("documents.db")
+# cursor = conn.cursor()
+
+# cursor.execute("""
+# CREATE TABLE IF NOT EXISTS docs (
+#     id INTEGER PRIMARY KEY,
+#     text TEXT,
+#     v1 REAL,
+#     v2 REAL,
+#     v3 REAL
+# )
+# """)
+
+# data = [
+#     ("Learn Python programming", 1, 0, 1),
+#     ("Deep learning tutorial", 0, 1, 0),
+#     ("FastAPI deployment guide", 1, 1, 1)
+# ]
+
+# cursor.executemany("INSERT INTO docs (text, v1, v2, v3) VALUES (?, ?, ?, ?)", data)
+# conn.commit()
+
+# cursor.execute("SELECT text, v1, v2, v3 FROM docs")
+# rows = cursor.fetchall()
+# for row in rows:
+#     print(row)
+
+# import numpy as np
+# from numpy.linalg import norm
+
+# def cosine_similarity(a, b):
+#     return np.dot(a, b) / (norm(a) * norm(b))
+
+# query = np.array([1, 0, 1])  # simulate embedding of user query
+
+# best_doc = None
+# best_score = -1
+
+# for row in rows:
+#     text = row[0]
+#     vec = np.array(row[1:])
+
+#     score = cosine_similarity(query, vec)
+
+#     print(f"{text} → {score}")
+#     print()
+
+#     if score > best_score:
+#         best_score = score
+#         best_doc = text
+
+# print("\nBest Match:", best_doc)
