@@ -44,5 +44,3 @@
 # S2 = "I love python bugs"
 # Vector1 = [1,1,1,0]
 # Vector2 = [1,1,0,1]
-
-# TF-IDF
