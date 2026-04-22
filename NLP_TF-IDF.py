@@ -54,4 +54,10 @@
 
 # TF-IDF knows words are different, but it doesn't know they are related
 
-# Word-embeddings were invented
+# Feature                      BOW             TF-IDF
+
+# Word Frequence                Y                Y
+# Filters common words          N                Y 
+# Word Order                    N                N 
+# Semantic meaning              N                N 
+# Sparse Vector                 Y                Y
